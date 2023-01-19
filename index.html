@@ -42,39 +42,13 @@
 
 <button id="onUcPrivacyClick">Try it</button>
 
-<script>
-    
-    
-    window.addEventListener("onUcPrivacyClick", function(e) {
-  console.log("Insert here your logic for Privacy Policy")
-})
-
-window.addEventListener("onUcImprintClick", function(e){
-  console.log("Insert here your logic for Imprint")
-}) 
-</script>
-
-    
+   
 
 <p>Embedding-Test.</p>
     
 <div class="uc-embed" uc-layout="1" uc-data="all"></div>
     
-    <script>
-            var page = 0;
-            window.addEventListener ("uc-event", function (e) {
-                if (e.detail.event == "consent_status" && e.detail.type  == "implicit" && page == 0){
-                    page=1;
-                }else{
-                if (e.detail.event == "consent_status" && e.detail.type  == "explicit" && page == 0){
-                    page=1;
-                }else{
-                    if(e.detail.event == "consent_status" && e.detail.type  == "explicit" && page == 1){
-                    location.reload();
-                    }
-                }
-                }});
-            </script>
+ 
 
 </body>
 
